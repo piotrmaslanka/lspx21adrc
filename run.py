@@ -27,7 +27,7 @@ def cCRC(st):   # str -> str
 
 print('Please make sure LSPX-21 is set to 9600 baud + no parity')
 
-port = serial(raw_input('Enter serial port name (eg. COM1)'), baudrate=9600)
+port = serial.serial(raw_input('Enter serial port name (eg. COM1)'), baudrate=9600)
 
 print('Attempting to read current address...')
 
